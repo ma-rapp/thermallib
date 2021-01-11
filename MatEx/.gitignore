@@ -1,0 +1,12 @@
+MatEx
+*.bin
+*.flp
+*.ptrace
+LICENSE
+README
+*.cpp
+*.h
+*.config
+*.zip
+eigen-3.3.9
+.stamp*
