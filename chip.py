@@ -1,4 +1,8 @@
-import model
+
+try:
+    import model
+except ImportError:
+    from . import model
 import numpy as np
 import os
 import random
@@ -7,7 +11,7 @@ import subprocess
 
 
 class Chip(object):
-    def __init__(self, model, processorsY, processorsX, ambient_temperature, max_temperature, inactive_power, config):
+    def __init__(self, model, processorsY, processorsX, ambient_temperature, max_temperature, inactive_power, config=None):
         self.model = model
         self.processorsY = processorsY
         self.processorsX = processorsX
